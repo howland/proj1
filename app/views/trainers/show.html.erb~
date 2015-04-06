@@ -9,5 +9,10 @@
         Health = <%= @pokemon.health %>
         </p>
         <%= button_to "Damage!", damage_path(id: @pokemon), :class => "button medium", :method => :patch %>
-
 <% end %>
+
+<% if @trainer ==  current_trainer%>
+   <%= button_to "New!", new_path, :class => "button medium", :method => :patch %>
+<% end %>
+
+
