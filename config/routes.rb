@@ -5,4 +5,5 @@ Rails.application.routes.draw do
 
   resources :pokemons
   patch '/capture', to: 'pokemons#capture', as: 'capture'
+  patch '/damage', to: 'pokemons#damage', as: 'damage'
 end
