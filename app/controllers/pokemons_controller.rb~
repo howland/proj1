@@ -1,12 +1,4 @@
-class TrainersController < ApplicationController
-  before_filter :authenticate_trainer!
+class PokemonsController < ApplicationController
 
-  def index
-    @trainers = Trainer.all
-  end
-
-  def show
-    @trainer = Trainer.find(params[:id])
-  end
 
 end
